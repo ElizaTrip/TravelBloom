@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    border: 1px solid wheat;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*To make image stay the same*/
+}
+
+#cite-menu{
+    display: flex;
+    background-color: #7B4071;
+    color: #C8FCEA;
+    border: 2px solid red;
+    height: 35px;
+    font-family: "Lucida Handwriting";
+}
+
+#info{
+    width: 20%;
+    padding-top: 5px;
+    text-align: center;
+    border: 1px solid salmon;
+    font-size: 20px;
+}
+
+#links{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid white;
+    flex: 1;
+}
+
+#links a{
+    padding-left: 10%;
+}
+
+#main{
+    height: 1000px;
+}
