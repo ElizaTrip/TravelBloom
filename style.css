@@ -6,34 +6,59 @@ body{
     background-attachment: fixed; /*To make image stay the same*/
 }
 
-#cite-menu{
+#site-menu{
+    padding: 5px;
     display: flex;
     background-color: #7B4071;
     color: #C8FCEA;
-    border: 2px solid red;
-    height: 35px;
     font-family: "Lucida Handwriting";
 }
 
 #info{
     width: 20%;
-    padding-top: 5px;
     text-align: center;
-    border: 1px solid salmon;
-    font-size: 20px;
+    font-size: large;
 }
 
 #links{
-    padding: 5px;
+    
     text-align: center;
-    border: 1px solid white;
     flex: 1;
 }
 
 #links a{
     padding-left: 10%;
+    color: #C8FCEA;
+    text-decoration: none;
+}
+
+#links a:hover{
+    color: #6EBFD2;
+    text-decoration: underline;
+}
+
+#search{
+    color: #8D6F8B;
+}
+
+#search button{
+    background-color: #D5EDEE;
+    border-radius: 10px;
+    height: 90%;
+}
+
+#search-input{
+    background-color: #D5EDEE;
+    height: 65%;
+    border-radius: 10px;
+    border: 1px;
+}
+
+::placeholder {
+    color: #8D6F8B;
 }
 
 #main{
     height: 1000px;
 }
+
