@@ -1,9 +1,27 @@
 body{
     margin: 0px;
-    border: 1px solid wheat;
     background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; /*To make image stay the same*/
+}
+
+h1, h2, h3, h4 {
+
+    margin:0px;
+    padding:0px;
+
+}
+
+button{
+    background-color: #D5EDEE;
+    border-radius: 10px;
+    height: 90%;
+}
+
+input{
+    background-color: #D5EDEE;
+    border-radius: 10px;
+    border: 1px;
 }
 
 #site-menu{
@@ -41,17 +59,8 @@ body{
     color: #8D6F8B;
 }
 
-#search button{
-    background-color: #D5EDEE;
-    border-radius: 10px;
-    height: 90%;
-}
-
 #search-input{
-    background-color: #D5EDEE;
     height: 65%;
-    border-radius: 10px;
-    border: 1px;
 }
 
 ::placeholder {
@@ -59,6 +68,23 @@ body{
 }
 
 #main{
-    height: 1000px;
+    background-color: #8D6F8B;
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 50%;
+    opacity: 95%;
+    color: whitesmoke;
+    font-family: Helvetica;
+    padding: 5px;
 }
 
+#main h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+#contactinfo input{
+    width: 95%;
+    word-wrap: break-word;
+    word-break: break-word;
+}

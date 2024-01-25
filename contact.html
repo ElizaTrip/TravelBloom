@@ -21,12 +21,23 @@
         </div>
     </nav>
     <section id="main">
-        <div style="color: white; border: 1px solid white;">
-            I promised myself that contact template will be last for today.
-        </div>
-        <div style="color: white; border: 1px solid white;">
-            Let's see if I lied to myself!
-        </div>
+        <h1> We want to hear from you!</h1>
+        <p>
+            Have any complaints? Wish to add any notable place to our database? Want to leave a review? <br>
+            Fill in the form below -  and we will contact you as soon as possible! 
+        </p>
+
+        <form id="contactinfo" >
+            <label for="name"><b>Name:</b> </label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email"><b>Email:</b> </label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message"><b>Message:</b> </label><br>
+            <input type="message" id="message" name="message" style="height: 100px;"><br>
+        </form>
+        <button id="submitbtn"> Submit </button>
     </section>
 </body>
 </html>
