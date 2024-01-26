@@ -44,13 +44,16 @@ input{
     flex: 1;
 }
 
-#links a{
-    padding-left: 10%;
-    color: #C8FCEA;
+a{
+        color: #C8FCEA;
     text-decoration: none;
 }
 
-#links a:hover{
+#links a{
+    padding-left: 10%;
+}
+
+a:hover{
     color: #6EBFD2;
     text-decoration: underline;
 }
@@ -69,13 +72,14 @@ input{
 
 #main{
     background-color: #8D6F8B;
-    margin-left: 30%;
+    margin-left: 25%;
     margin-top: 5%;
     width: 50%;
     opacity: 95%;
     color: whitesmoke;
     font-family: Helvetica;
     padding: 5px;
+    font-size: medium;
 }
 
 #main h1{
