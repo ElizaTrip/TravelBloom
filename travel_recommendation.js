@@ -1,12 +1,17 @@
-// Getting button for search. 
+// Getting buttons for search and clear. 
 const searchbtn = document.getElementById('searchbtn');
+const clearbtn = document.getElementById('clearbtn');
 
+// Get result div.
+const resultDiv = document.getElementById('results');
+
+// Get submit button.
+const submitbtn = document.getElementById('submitbtn');
 
 // Create what is going to happen after clicking the search button.
 function onSearch(){
     // Getting input and selecting where to paste results.
     const input = document.getElementById('search-input').value.toLowerCase();
-    const resultDiv = document.getElementById('results');
     resultDiv.innerHTML = '';
     resultDiv.innerHTML += `<h1 style="color: #0F033E;"> Result of a search '${input}' </h1>`;
 
@@ -52,10 +57,30 @@ function onSearch(){
                 }
             }
         } else{
+            // If no matches found - inform.
             resultDiv.innerHTML += `<p>No matches found.</p>`
         }
+        // Return to the top.
         resultDiv.innerHTML += `<a  href="#search"> Back to search! </a>`
     })
 }
 
+// Added search event
 searchbtn.addEventListener('click', onSearch);
+
+
+// Clear result and search text.
+function onClear(){
+    resultDiv.innerHTML = '';
+    document.getElementById('search-input').value ='';
+}
+
+clearbtn.addEventListener('click', onClear);
+
+function submitMessage(){
+    alert('Thank you for leaving a message!');
+    document.getElementById('name').value ='';
+    document.getElementById('email').value ='';
+    document.getElementById('message').value ='';
+}
+submitbtn.addEventListener('click', submitMessage);
