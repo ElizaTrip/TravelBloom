@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-image: url("background.jpg");
+    background-image: url("static/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; /*To make image stay the same*/
 }
@@ -92,3 +92,14 @@ a:hover{
     word-wrap: break-word;
     word-break: break-word;
 }
+
+
+#results{
+    width: 100%;
+    text-align: center;
+}
+
+#results img{
+    object-fit: contain;
+}
+
